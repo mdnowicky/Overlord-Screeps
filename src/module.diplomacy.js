@@ -195,9 +195,9 @@ function friendlyListManagement() {
     }
     if (!!~['shard0', 'shard1', 'shard2', 'shard3'].indexOf(Game.shard.name)) {
         doNotAggressArray = LOANlist;
-        doNotAggressArray = _.union(doNotAggressArray, MANUAL_FRIENDS, [MY_USERNAME], ['Shibdib'], earnedFriends);
+        doNotAggressArray = _.union(doNotAggressArray, MANUAL_FRIENDS, [MY_USERNAME], ['Shibdib'], ['the_rogue_end_user'], earnedFriends);
     } else {
-        doNotAggressArray = [MY_USERNAME, 'Shibdib'];
+        doNotAggressArray = [MY_USERNAME, 'Shibdib', 'the_rogue_end_user'];
         doNotAggressArray = _.union(doNotAggressArray, MANUAL_FRIENDS, earnedFriends);
     }
     global.FRIENDLIES = doNotAggressArray;
