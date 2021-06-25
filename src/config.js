@@ -1,19 +1,10 @@
-/*
- * Copyright (c) 2020.
- * Github - Shibdib
- * Name - Bob Sardinia
- * Project - Overlord-Bot (Screeps)
- */
 
-// BACKUP THIS FILE BETWEEN UPDATES!!!!!!!
-// Use this to modify how your overlord bot runs
-
-global.COMBAT_SERVER = []; // Insert the Game.shard.name of servers you'd like to declare everyone hostile
-global.HOSTILES = []; // Manually set players as hostile
-global.MANUAL_FRIENDS = []; // Manually set players as friends (overrides COMBAT_SERVER)
-global.RAMPART_ACCESS = false // Allow friends and allies access thru ramparts
+global.COMBAT_SERVER = ['shard3', 'shard0', 'shard1', 'shard2']; // Insert the Game.shard.name of servers you'd like to declare everyone hostile
+global.HOSTILES = ['NicGibbs', 'static_machine', 'kshshel']; // Manually set players as hostile
+global.MANUAL_FRIENDS = ['the_rogue_end_user']; // Manually set players as friends (overrides COMBAT_SERVER)
+global.RAMPART_ACCESS = true // Allow friends and allies access thru ramparts
 global.NAP_ALLIANCE = []; // Do not attack members of this alliance
-global.HOLD_SECTOR = false; // Attack rooms in sectors you have rooms (ignores local sphere)
+global.HOLD_SECTOR = true; // Attack rooms in sectors you have rooms (ignores local sphere)
 global.ATTACK_LOCALS = true; // Attacks targets within range of the next entry
 global.LOCAL_SPHERE = 2; // Range that rooms consider local via linear distance
 global.NEW_SPAWN_DENIAL = true; // Crush new spawns immediately
@@ -24,11 +15,11 @@ global.NCP_HOSTILE = true; // Always attack users of open source bots
 global.ATTACK_COOLDOWN = 4500; //Time between attacks on a room
 
 // Signing and whatnot
-global.OWNED_ROOM_SIGNS = ["~~~NO ENTRY~~~", "Full Auto Overlord Bot"];
-global.RESERVE_ROOM_SIGNS = ["~~This is a restricted area, violators will be attacked~~", "~~Exclusion Zone~~"];
-global.EXPLORED_ROOM_SIGNS = ["Automated Exploration Occurred Here", "Just saying Hi!", "We Know", "Intel gathered, enter at your own risk."];
-global.ATTACK_ROOM_SIGNS = ["~~ALL YOUR BASE BELONG TO ME~~"];
-global.EXPLORER_SPAM = ['HI', 'Hello', 'Beep', 'Boop', 'Aloha', 'Shibby!'];
+global.OWNED_ROOM_SIGNS = ["#!"];
+global.RESERVE_ROOM_SIGNS = ["KEEP OUT"];
+global.EXPLORED_ROOM_SIGNS = ["Exploring new lands.", "We see you.", "We know.", "Intel gathered."];
+global.ATTACK_ROOM_SIGNS = ["0wned", "pwned"];
+global.EXPLORER_SPAM = ['HI', 'Hello', 'Beep', 'Boop', 'Aloha', 'koneechiwa', 'i smol penis', 'v tiny penis'];
 
 // Wall and rampart target amounts
 global.BARRIER_TARGET_HIT_POINTS = {
